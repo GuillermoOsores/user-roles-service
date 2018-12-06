@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "ts-node ./src/server.ts",
+    "start": "tsc && node ./dist/server.js",
     "start-dev": "ts-node ./src/server.ts",
     "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./spec/*.spec.ts"
   },

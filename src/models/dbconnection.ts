@@ -3,7 +3,7 @@ import { connect, connection } from 'mongoose';
 
 var dbURI = "mongodb://localhost/trainingApp";
 
-connect(dbURI);
+connect(dbURI, { useNewUrlParser: true });
 
 connection.on('connected', function () {
     console.log('Mongoose connected to ' + dbURI);
