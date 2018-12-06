@@ -6,6 +6,7 @@
   "scripts": {
     "start": "tsc && node ./dist/server.js",
     "start-dev": "ts-node ./src/server.ts",
+    "build": "tsc",
     "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./spec/*.spec.ts"
   },
   "keywords": [],
